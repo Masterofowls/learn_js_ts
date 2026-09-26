@@ -1,0 +1,10 @@
+{
+  "name": "learn-js-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive JS → TS lessons from mid to high level",
+  "scripts": {
+    "lesson:01": "node lessons/01-closures/task.js"
+  }
+}
