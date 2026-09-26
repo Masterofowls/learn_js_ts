@@ -5,6 +5,7 @@
   "type": "module",
   "description": "Interactive JS → TS lessons from mid to high level",
   "scripts": {
-    "lesson:01": "node lessons/01-closures/task.js"
+    "lesson:01": "node lessons/01-closures/task.js",
+    "lesson:02": "node lessons/02-this-binding/task.js"
   }
 }

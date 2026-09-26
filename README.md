@@ -20,8 +20,15 @@ Preferences locked for this track:
 # read
 lessons/01-closures/theory.md
 
-# implement, then optionally smoke-run:
-npm run lesson:01
+# implement, then ask: check lesson 1
+```
+
+## Lesson 02
+
+```bash
+lessons/02-this-binding/theory.md
+lessons/02-this-binding/task.js
+# then ask: check lesson 2
 ```
 
 ## Curriculum
