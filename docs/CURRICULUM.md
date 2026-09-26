@@ -10,7 +10,7 @@
 
 | # | Topic | Status |
 |---|--------|--------|
-| 01 | Closures (from scratch) | **in progress** |
+| 01 | Closures (from scratch) | **done** |
 | 02 | `this` binding (call / apply / bind / arrows) | pending |
 | 03 | Prototypes + classes (linked to closures/`this`) | pending |
 | 04 | Event loop deep dive | pending |

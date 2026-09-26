@@ -1,77 +1,71 @@
 /**
- * Lesson 01 — Closures
+ * Lesson 01 — Closures (small start)
  *
- * Read theory.md first. Implement ALL exports below.
- * Do not rename exports. Do not add extra required setup.
+ * Read theory.md first. Implement ALL 3 exports below.
+ * Do not rename exports.
  *
- * PASS criteria (all must hold):
+ * PASS criteria (exactly 3 tasks):
  *
- * 1) createCounter(start?)
- *    - Returns an object: { inc, dec, value }
- *    - Internal count is private (not exposed as a data property like .count)
- *    - createCounter() starts at 0 if start omitted
- *    - Examples:
- *        const c = createCounter(5);
- *        c.inc();    // → 6
- *        c.inc();    // → 7
- *        c.dec();    // → 6
- *        c.value();  // → 6
- *    - Two counters must not share state:
- *        const a = createCounter(0);
- *        const b = createCounter(10);
- *        a.inc(); // a.value() === 1, b.value() === 10
- *
- * 2) once(fn)
- *    - Returns a new function
- *    - First call: runs fn with the same this/args, returns that result
- *    - Later calls: do NOT run fn again; return the first result
- *    - Examples:
- *        let n = 0;
- *        const add = once((x) => { n += 1; return x + 1; });
- *        add(1); // → 2, n === 1
- *        add(9); // → 2, n === 1  (fn not called again)
- *
- * 3) makeFuncs(n)
- *    - Returns an array of length n
- *    - The function at index i, when called with no args, returns i
- *    - Must work for n = 0 (empty array) and n = 5, etc.
- *    - Must NOT have the classic shared-loop-variable bug
+ * 1) makeGreeter(name)
+ *    - Returns a function
+ *    - That function takes no args and returns: "Hello, " + name
  *    - Example:
- *        const fns = makeFuncs(3);
- *        fns[0](); // → 0
- *        fns[1](); // → 1
- *        fns[2](); // → 2
+ *        const hi = makeGreeter("Ada");
+ *        hi(); // → "Hello, Ada"
  *
- * Optional STRETCH (not required to pass):
- * 4) createCache(fetcher)
- *    - Returns async (key) => value
- *    - First call for a key: await fetcher(key), store, return
- *    - Later calls for same key: return cached value (no second fetch)
+ * 2) createCounter()
+ *    - Starts at 0 (no start argument)
+ *    - Returns { inc, value }
+ *    - inc() adds 1 and returns the new number
+ *    - value() returns the current number without changing it
+ *    - Count must be private (no .count on the object)
+ *    - Example:
+ *        const c = createCounter();
+ *        c.value(); // → 0
+ *        c.inc();   // → 1
+ *        c.inc();   // → 2
+ *        c.value(); // → 2
+ *
+ * 3) makeThree()
+ *    - Returns an array of exactly 3 functions
+ *    - fns[0]() → 0, fns[1]() → 1, fns[2]() → 2
+ *    - Do not use one shared loop variable that all three see after the loop
  *
  * When done, reply in chat: check lesson 1
  */
 
-export function createCounter(start = 0) {
-  // TODO: private count; return { inc, dec, value }
-  throw new Error('TODO: createCounter');
+export function makeGreeter(name) {
+  return function greet() {
+    return `Hello, ${name}`;
+}
 }
 
-export function once(fn) {
-  // TODO: return a wrapper that runs fn only once
-  throw new Error('TODO: once');
+export function createCounter() {
+    let amount = 0;
+    return {
+      inc(){
+        amount+=1
+        return amount
+      },
+      value(){
+        return amount
+      }
+    }
 }
 
-export function makeFuncs(n) {
-  // TODO: return array of n functions; i-th returns i
-  throw new Error('TODO: makeFuncs');
+
+export function makeThree() {
+  return [
+   function(){
+    return 0
+   },
+   function(){
+    return 1
+   },
+   function(){
+    return 2
+   }
+  ]
 }
 
-// --- STRETCH (optional) ---
-
-export function createCache(fetcher) {
-  // TODO (optional): memoize async fetcher by key
-  throw new Error('TODO: createCache (stretch)');
-}
-
-// When finished implementing, reply in chat: check lesson 1
-// Optional local smoke: import these functions in a scratch file or REPL.
+// When finished, reply: check lesson 1

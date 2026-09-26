@@ -108,23 +108,13 @@ function fixed() {
 
 Another fix (works even with `var`): wrap the body in an IIFE / factory that captures the current value in its own parameter binding.
 
-## 6. `once` — run at most one time
+## 6. What you will build (3 small tasks)
 
-```js
-function once(fn) {
-  let called = false;
-  let result;
-  return function (...args) {
-    if (!called) {
-      called = true;
-      result = fn.apply(this, args);
-    }
-    return result;
-  };
-}
-```
+1. **`makeGreeter(name)`** — return a function that still “knows” `name`.
+2. **`createCounter()`** — hide a number; expose only `inc` and `value`.
+3. **`makeThree()`** — three functions that each remember their own index.
 
-The returned function closes over `called` and `result`.
+(Later lessons will cover `once`, caches, etc. Skip those for now.)
 
 ## Before you code
 
@@ -135,4 +125,4 @@ The returned function closes over `called` and `result`.
 
 ## Next
 
-Open `task.js` and implement every export until the PASS criteria are met. Then reply: **check lesson 1**.
+Open `task.js` and implement all **3** exports. Then reply: **check lesson 1**.
