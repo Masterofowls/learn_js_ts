@@ -12,9 +12,9 @@
 |---|--------|--------|
 | 01 | Closures (from scratch) | **done** |
 | 02 | `this` binding (call / apply / bind / arrows) | **done** |
-| 03 | Prototypes + classes (linked to closures/`this`) | pending |
-| 04 | Event loop deep dive | pending |
-| 05 | Promise API fluency (`.then`, all / race / any) | pending |
+| 03 | Prototypes + classes (linked to closures/`this`) | **done** |
+| 04 | Event loop deep dive | **done** |
+| 05 | Promise API fluency (`.then`, all / race / any) | **done** |
 | 06 | Tiny custom Promise | pending |
 | 07 | Iterators & generators | pending |
 | 08 | Proxy, Reflect, Symbols | pending |
@@ -30,4 +30,8 @@
 lessons/01-closures/
   theory.md
   task.js
+tests/unit/
+  01-closures.test.js   # used for "check lesson N"
 ```
+
+Checks run via `npm run test:NN` (Node built-in test runner), not ad-hoc terminal one-liners.

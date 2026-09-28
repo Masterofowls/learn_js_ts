@@ -5,7 +5,11 @@
   "type": "module",
   "description": "Interactive JS → TS lessons from mid to high level",
   "scripts": {
-    "lesson:01": "node lessons/01-closures/task.js",
-    "lesson:02": "node lessons/02-this-binding/task.js"
+    "test": "node --test tests/unit/**/*.test.js",
+    "test:01": "node --test tests/unit/01-closures.test.js",
+    "test:02": "node --test tests/unit/02-this-binding.test.js",
+    "test:03": "node --test tests/unit/03-prototypes-classes.test.js",
+    "test:04": "node --test tests/unit/04-event-loop.test.js",
+    "test:05": "node --test tests/unit/05-promise-api.test.js"
   }
 }
