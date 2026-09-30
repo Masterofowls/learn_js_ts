@@ -15,10 +15,10 @@
 | 03 | Prototypes + classes (linked to closures/`this`) | **done** |
 | 04 | Event loop deep dive | **done** |
 | 05 | Promise API fluency (`.then`, all / race / any) | **done** |
-| 06 | Tiny custom Promise | pending |
-| 07 | Iterators & generators | pending |
-| 08 | Proxy, Reflect, Symbols | pending |
-| 09 | Module design & composition | pending |
+| 06 | Tiny custom Promise | **done** |
+| 07 | Iterators & generators | **done** |
+| 08 | Proxy, Reflect, Symbols | **done** |
+| 09 | Module design & composition | **in progress** |
 | 10 | Resilient async (AbortController, errors) | pending |
 | 11 | Jest deeper | pending |
 | 12 | Light performance | pending |

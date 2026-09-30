@@ -24,3 +24,10 @@
 - Started **Lesson 05 — Promise API**: `lessons/05-promise-api/{theory.md,task.js}` + `tests/unit/05-promise-api.test.js`
 - Review (check lesson 5): sumAll + firstValue PASS; doubleThen FAIL — must return `.then` result and multiply by 2
 - Re-check: doubleThen fixed — **Lesson 05 ALL PASS**
+- Started **Lesson 06 — MiniPromise**: `lessons/06-mini-promise/{theory.md,task.js}` + `tests/unit/06-mini-promise.test.js`
+- Review (check lesson 6): **ALL PASS** (constructor, deferred then, microtask order, static resolve + chain)
+- Started **Lesson 07 — Iterators & generators**: `lessons/07-iterators-generators/{theory.md,task.js}` + `tests/unit/07-iterators-generators.test.js`
+- Review (check lesson 7): **ALL PASS**
+- Started **Lesson 08 — Proxy/Reflect/Symbols**: `lessons/08-proxy-reflect-symbols/{theory.md,task.js}` + `tests/unit/08-proxy-reflect-symbols.test.js`
+- Review (check lesson 8): **ALL PASS**
+- Started **Lesson 09 — Module design & composition**: `lessons/09-module-composition/{theory.md,task.js}` + `tests/unit/09-module-composition.test.js`

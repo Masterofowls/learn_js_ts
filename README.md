@@ -64,6 +64,38 @@ lessons/05-promise-api/task.js
 npm run test:05
 ```
 
+## Lesson 06
+
+```bash
+lessons/06-mini-promise/theory.md
+lessons/06-mini-promise/task.js
+npm run test:06
+```
+
+## Lesson 07
+
+```bash
+lessons/07-iterators-generators/theory.md
+lessons/07-iterators-generators/task.js
+npm run test:07
+```
+
+## Lesson 08
+
+```bash
+lessons/08-proxy-reflect-symbols/theory.md
+lessons/08-proxy-reflect-symbols/task.js
+npm run test:08
+```
+
+## Lesson 09
+
+```bash
+lessons/09-module-composition/theory.md
+lessons/09-module-composition/task.js
+npm run test:09
+```
+
 ## Curriculum
 
 See [docs/CURRICULUM.md](docs/CURRICULUM.md).

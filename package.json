@@ -10,6 +10,10 @@
     "test:02": "node --test tests/unit/02-this-binding.test.js",
     "test:03": "node --test tests/unit/03-prototypes-classes.test.js",
     "test:04": "node --test tests/unit/04-event-loop.test.js",
-    "test:05": "node --test tests/unit/05-promise-api.test.js"
+    "test:05": "node --test tests/unit/05-promise-api.test.js",
+    "test:06": "node --test tests/unit/06-mini-promise.test.js",
+    "test:07": "node --test tests/unit/07-iterators-generators.test.js",
+    "test:08": "node --test tests/unit/08-proxy-reflect-symbols.test.js",
+    "test:09": "node --test tests/unit/09-module-composition.test.js"
   }
 }
